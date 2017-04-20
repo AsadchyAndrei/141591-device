@@ -57,8 +57,52 @@
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#">Каталог товаров</a></li>
-          <li><a>Средства для ухода</a></li>
+          <li><a>Моноподы для селфи</a></li>
         </ul>
+      </div>
+      <div class="catalog">
+        <div class="filters">
+          <form name="filter" method="post" action="catalog.php">
+            <div class="sorting-style">Фильтр:</div>
+            <div class="filters-price">
+              <hr>
+              <label class="filter-stylename" for="price">Стоимость</label><br>
+              <span class="filter-price-slider">от 0</span>
+              <input name="price" type="range" min="0" max="5000"> <span class="filter-price-slider">до 5000</span>
+            </div>
+            <div class="filter-color">
+              <hr>
+              <label class="filter-stylename">Цвет</label><br>
+              <input class="filter-color-style" name="black" id="black" type="checkbox" checked>
+              <label for="black">Черный</label>
+              <input class="filter-color-style" name="white" id="white" type="checkbox">
+              <label for="white">Белый</label>
+              <input class="filter-color-style" name="blue" id="blue" type="checkbox" checked>
+              <label for="blue">Синий</label>
+              <input class="filter-color-style" name="red" id="red" type="checkbox" checked>
+              <label for="red">Красный</label>
+              <input class="filter-color-style" name="pink" id="pink" type="checkbox">
+              <label for="pink">Розовый</label>
+            </div>
+            <div class="filter-bluetooth">
+              <hr>
+              <label class="filter-stylename">Bluetooth</label><br>
+              <input class="filter-bluetooth-style" name="bluetooth-yes" id="bluetooth-yes" type="radio" checked>
+              <label for="bluetooth-yes">Есть</label>
+              <input class="filter-bluetooth-style" name="bluetooth-no" id="bluetooth-no" type="radio">
+              <label for="bluetooth-no">Нет</label>
+            </div>
+            <input class="btn" type="submit" value="Показать">
+          </form>
+        </div>
+        <div class="products">
+          <div class="sorting">
+            <div class="sorting-style">Сортировка:</div>
+            
+
+          </div>
+
+        </div>
       </div>
     </main>
   </body>
