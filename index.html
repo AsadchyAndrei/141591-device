@@ -7,35 +7,23 @@
   <body>
     <header>
       <div class="logo">
-        <h1>Device</h1>
+        <h1 class="logo__title">Device</h1>
       </div>
       <div class="menu">
-        <form class="search-form" method="post" action="search.php">
+        <form class="menu__search" method="post" action="search.php">
           <input type="search" name="search" placeholder="Поиск по сайту">
         </form>
-        <div class="menu-enter">
-          <a class="menu-link" href="#">Войти</a>
+        <div class="menu__enter">
+          <a class="menu__link" href="#">Войти</a>
         </div>
-        <div class="menu-comparison">
-          <a class="menu-link" href="#">Сравнить</a>
-        </div>
-        <div class="menu-basket">
-          <a class="menu-link" href="#">Корзина</a>
+        <div class="menu__basket">
+          <a class="menu__link" href="#">Сравнить</a>
+          <a class="menu__link" href="#">Корзина</a>
         </div>
       </div>
       <div class="navigation">
         <div class="navigation-catalog">
           <a class="navigation-link" href="#">Каталог товаров</a>
-        </div>
-        <div class="navigation-catalog-dropdown">
-          <ul>
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнесс браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
         </div>
         <div class="navigation-delivery">
           <a class="navigation-link" href="#">Доставка</a>
@@ -47,84 +35,96 @@
           <a class="navigation-link" href="#">Контакты</a>
         </div>
       </div>
-    </header>
-    <main>
-      <div class="picture">
-        <img src="http://placehold.it/300x350" alt="Самая длинная палка для селфи доступная в нашем магазине.">
+      <div class="navigation-catalog-dropdown">
+        <ul>
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнесс браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
       </div>
       <div class="slider">
-        <h2 class="slider-title">Делай селфи,<br>как Бен Стиллер!
-        </h2>
-        <p class="slider-desc">Самая длинная палка для селфи доступна в нашем магазине.</p>
-        <p class="slider-desc">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <div class="more-and-link">
-          <div class="slider-more">
-            <a class="btn" href="#">Подробнее</a>
+        <div class="slider__slides">
+          <div class="slider__slide">
+            <div class="slider__photo">
+              <img src="http://placehold.it/110x110" alt="Фото самой длинной палки для селфи.">
+            </div>
+            <div class="slider__desc">
+              <h2 class="slider__title">Делай селфи,<br>как Бен Стиллер!</h2>
+              <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <div class="btn">
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="characteristics">
+                <div>
+                  <p>8,5 м</p>
+                  <p>Длина палки</p>
+                </div>
+                <div>
+                  <p>5 кг</p>
+                  <p>Вес палки</p>
+                </div>
+                <div>
+                  <p>Карбон</p>
+                  <p>Материал</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <ul class="slider-link">
-            <li><a></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+        </div>
+        <div class="slider__nav">
+          <ul>
+            <li><a class="slider__nav_active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
           </ul>
         </div>
-        <div class="options">
-          <div>8,5 м</div>
-          <div>5 кг</div>
-          <div>Карбон</div>
-        </div>
-        <div class="options-name">
-          <div>Длина палки</div>
-          <div>Вес палки</div>
-          <div>Материал</div>
-        </div>
       </div>
-      <div class="catalog">
-        <div class="catalog-vr">
+    </header>
+    <main>
+      <div class="categories">
+        <div class="categories-item">
           <img src="http://placehold.it/110x110" alt="Виртуальная реальность">
           <p>Виртуальная<br>реальность</p>
         </div>
-        <div class="catalog-monopods">
+        <div class="categories-item">
           <img src="http://placehold.it/110x110" alt="Моноподы для селфи">
           <p>Моноподы<br>для селфи</p>
         </div>
-        <div class="catalog-cameras">
+        <div class="categories-item">
           <img src="http://placehold.it/110x110" alt="Экшн-камеры">
           <p>Экшн-камеры</p>
         </div>
-        <div class="catalog-bracelets">
+        <div class="categories-item">
           <img src="http://placehold.it/110x110" alt="Фитнесс браслеты">
           <p>Фитнесс<br>браслеты</p>
         </div>
-        <div class="catalog-watchs">
+        <div class="categories-item">
           <img src="http://placehold.it/110x110" alt="Умные часы">
           <p>Умные часы</p>
         </div>
-        <div class="catalog-copters">
+        <div class="categories-item">
           <img src="http://placehold.it/110x110" alt="Квадрокоптеры">
           <p>Квадрокоптеры</p>
         </div>
       </div>
       <div class="meta">
-        <div class="meta-name">
-          <div class="btn-active">
-            <a>Доставка</a>
-          </div>
-          <div class="btn">
-            <a href="#">Гарантия</a>
-          </div>
-          <div class="btn">
-            <a href="#">Кредит</a>
-          </div>
+        <div class="meta__nav">
+          <ul>
+            <li class="btn btn-active">Доставка</li>
+            <li class="btn">Гарантия</li>
+            <li class="btn">Кредит</li>
+          </ul>
         </div>
-        <div class="meta-details">
-          <h2>Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар, прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="meta-img">
-          <img src="http://placehold.it/110x110" alt="Доставка">
+        <div class="meta__desc">
+          <h2 class="slider__title">Доставка</h2>
+          <p class="slider__text">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж.</p>
+          <img class="meta__desc_img" src="http://placehold.it/100x200" alt="Доставка">
         </div>
       </div>
-      <div clas="Company">
+      <div class="company">
         <a href="#"><img src="http://placehold.it/200x110" alt="dji"></a>
         <a href="#"><img src="http://placehold.it/200x110" alt="Sp Gadgets"></a>
         <a href="#"><img src="http://placehold.it/200x110" alt="GoPro"></a>
@@ -158,9 +158,7 @@
     </main>
     <footer>
       <div class="footer-top">
-        <div class="logo">
-          <h1>Device</h1>
-        </div>
+        <div class="logo">Device</div>
         <div class="menu-enter">
           <a class="menu-link" href="#">Войти</a>
         </div>
