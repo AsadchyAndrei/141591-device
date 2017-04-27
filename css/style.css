@@ -1,0 +1,21 @@
+body {
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  font-weight: 300;
+  font-family: "OpenSans", Arial, sans-serif;
+}
+
+.logo__title {
+  font-size: 48px;
+  color: #000000;
+  font-weight: 800;
+  font-family: "Gilroy", Arial, sans-serif;
+}
+
+.slider__title {
+  font-size: 47px;
+  color: #000000;
+  font-weight: 800;
+  font-family: "Gilroy", Arial, sans-serif;
+}
