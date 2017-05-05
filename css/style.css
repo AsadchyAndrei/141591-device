@@ -25,6 +25,10 @@ body {
   font-weight: 800;
 }
 
+.map {
+  border: 0;
+}
+
 .main-header {
   outline: 2px solid green;
   width: 1160px;
