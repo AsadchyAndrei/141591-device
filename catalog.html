@@ -2,105 +2,107 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс - Моноподы для селфи</title>
+    <title>HTML Academy: Девайс - Каталог</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <h1 class="logo-title">Device</h1>
-      </div>
-      <div class="menu">
-        <form class="menu-search" method="post" action="search.php">
-          <input type="search" name="search" placeholder="Поиск по сайту">
-        </form>
-        <div class="menu-enter">
-          <a class="menu-link" href="#">Валентин Петухов</a>
-          <a class="menu-link menu-link-active" href="#">Выйти</a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <h1 class="main-title">Device</h1>
+        <div class="nav-top">
+          <form class="nav-top-search" method="post" action="search.php">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+          </form>
+          <div class="nav-top-user">
+            <a class="link" href="#">Валентин Петухов</a>
+            <a class="link" href="#">Выйти</a>
+            <a class="link" href="#">Сравнить</a>
+            <a class="link" href="#">Корзина</a>
+          </div>
         </div>
-        <div class="menu-basket">
-          <a class="menu-link" href="#">Сравнить</a>
-          <a class="menu-link" href="#">Корзина</a>
+        <div class="nav-bottom">
+          <div class="nav-bottom-catalog">
+            <a class="btn">Каталог товаров</a>
+          </div>
+          <div class="nav-bottom-aside">
+            <a class="btn">Доставка</a>
+            <a class="btn">Гарантия</a>
+            <a class="btn">Контакты</a>
+          </div>
         </div>
-      </div>
-      <div class="navigation">
-        <div class="navigation-catalog">
-          <a class="navigation-link" href="#">Каталог товаров</a>
-        </div>
-        <div class="navigation-delivery">
-          <a class="navigation-link" href="#">Доставка</a>
-        </div>
-        <div class="navigation-guarantee">
-          <a class="navigation-link" href="#">Гарантия</a>
-        </div>
-        <div class="navigation-contacts">
-          <a class="navigation-link" href="#">Контакты</a>
-        </div>
-      </div>
-      <div class="navigation-catalog-dropdown">
-        <ul>
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнесс браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
-        </ul>
+      </nav>
+
+      <div class="dropdown">
+        <a class="link" href="#">Виртуальная реальность</a>
+        <a class="link" href="#">Моноподы для селфи</a>
+        <a class="link" href="#">Экшн-камеры</a>
+        <a class="link" href="#">Фитнесс браслеты</a>
+        <a class="link" href="#">Умные часы</a>
+        <a class="link" href="#">Квадрокоптеры</a>
       </div>
     </header>
+
     <main>
-      <h2>Моноподы для селфи</h2>
-      <div class="breadcrumbs">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a>Моноподы для селфи</a></li>
-        </ul>
-      </div>
+      <h2 class="subject">Моноподы для селфи</h2>
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a>Моноподы для селфи</a></li>
+      </ul>
       <div class="catalog">
         <div class="sidebar">
           <div class="sidebar-header">
-            <div class="sidebar-col">
-              <h3 class="sidebar-header-title">Фильтр:</h3>
-            </div>
+            <h3 class="sidebar-header-title">Фильтр:</h3>
           </div>
           <div class="sidebar-body">
-            <div class="sidebar-col">
-              <form name="filter" method="post" action="catalog.php">
-                <div class="filter-title">
-                  <hr>
-                  <span>Стоимость</span>
-                </div>
-                <div class="filter-range">
-                  <span>от 0</span>
-                  <input name="price" type="range" min="0" max="5000">
-                  <span>до 5000</span>
-                 </div>
-                <div class="filter-title">
-                  <hr>
-                  <span>Цвет</span>
-                </div>
+            <form class="sidebar-body-form" name="filter" method="post" action="catalog.php">
+              <div class="filter-title">
+                <hr>
+                <span>Стоимость</span>
+              </div>
+              <div class="filter-range">
+                <span>от 0</span>
+                <input name="price" type="range" min="0" max="5000">
+                <span>до 5000</span>
+              </div>
+              <div class="filter-title">
+                <hr>
+                <span>Цвет</span>
+              </div>
+              <div>
                 <input class="filter-checkbox" name="black" id="black" type="checkbox" checked>
                 <label for="black">Черный</label>
+              </div>
+              <div>
                 <input class="filter-checkbox" name="white" id="white" type="checkbox">
                 <label for="white">Белый</label>
+              </div>
+              <div>
                 <input class="filter-checkbox" name="blue" id="blue" type="checkbox" checked>
                 <label for="blue">Синий</label>
+              </div>
+              <div>
                 <input class="filter-checkbox" name="red" id="red" type="checkbox" checked>
                 <label for="red">Красный</label>
+              </div>
+              <div>
                 <input class="filter-checkbox" name="pink" id="pink" type="checkbox">
                 <label for="pink">Розовый</label>
-                <div class="filter-title">
-                  <hr>
-                  <span>Bluetooth</span>
-                </div>
+              </div>
+              <div class="filter-title">
+                <hr>
+                <span>Bluetooth</span>
+              </div>
+              <div>
                 <input class="filter-radio" name="bluetooth-yes" id="bluetooth-yes" type="radio" checked>
                 <label for="bluetooth-yes">Есть</label>
+              </div>
+              <div>
                 <input class="filter-radio" name="bluetooth-no" id="bluetooth-no" type="radio">
                 <label for="bluetooth-no">Нет</label>
-                <input class="btn" type="submit" value="Показать">
-              </form>
-            </div>
+              </div>
+              <input class="btn" type="submit" value="Показать">
+            </form>
           </div>
         </div>
         <div class="body">
@@ -150,19 +152,14 @@
         </div>
       </div>
     </main>
+
     <footer>
       <div class="footer-top">
-        <div class="logo">
-          <a class="logo-title" href="index.html">Device</a>
-        </div>
-        <div class="menu-enter">
-          <a class="menu-link" href="#">Войти</a>
-        </div>
-        <div class="menu-comparison">
-          <a class="menu-link" href="#">Сравнить</a>
-        </div>
-        <div class="menu-basket">
-          <a class="menu-link" href="#">Корзина</a>
+        <a class="logo-title">Device</a>
+        <div class="footer-top-right">
+          <a class="link" href="#">Войти</a>
+          <a class="link" href="#">Сравнить</a>
+          <a class="link" href="#">Корзина</a>
         </div>
       </div>
       <div class="footer-middle">
@@ -170,15 +167,9 @@
           г. Москва, ул. Строителей, 15
         </div>
         <div class="footer-navigation">
-          <div class="navigation-delivery">
-            <a class="navigation-link" href="#">Доставка</a>
-          </div>
-          <div class="navigation-guarantee">
-            <a class="navigation-link" href="#">Гарантия</a>
-          </div>
-          <div class="navigation-contacts">
-            <a class="navigation-link" href="#">Контакты</a>
-          </div>
+          <a class="btn" href="#">Доставка</a>
+          <a class="btn" href="#">Гарантия</a>
+          <a class="btn" href="#">Контакты</a>
         </div>
         <div class="phone">
           Тел. +7 (495) 495-95-95
