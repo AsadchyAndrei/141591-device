@@ -1,4 +1,11 @@
 body {
+  outline: 1px solid red;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -6,16 +13,252 @@ body {
   font-family: "OpenSans", Arial, sans-serif;
 }
 
-.logo__title {
+.main-title {
   font-size: 48px;
   color: #000000;
   font-weight: 800;
   font-family: "Gilroy", Arial, sans-serif;
 }
 
-.slider__title {
-  font-size: 47px;
+.subtitle {
+  font-size: 18px;
   color: #000000;
   font-weight: 800;
   font-family: "Gilroy", Arial, sans-serif;
+}
+
+.main-header {
+  outline: 2px solid green;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.main-navigation {
+  outline: 3px solid blue;
+  width: 1040px;
+  height: 185px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #f0c52e;
+}
+
+.main-title {
+  outline: 4px solid yellow;
+}
+
+.nav-top {
+  outline: 4px solid yellow;
+  display: flex;
+}
+
+.nav-top-search {
+  outline: 5px solid orange;
+  width: 520px;
+}
+
+.nav-top-user {
+  outline: 5px solid orange;
+  width: 520px;
+}
+
+.nav-bottom {
+  outline: 4px solid yellow;
+  display: flex;
+}
+
+.nav-bottom-catalog {
+  outline: 5px solid orange;
+  width: 520px;
+}
+
+.nav-bottom-aside {
+  outline: 5px solid orange;
+  width: 520px;
+}
+
+.dropdown {
+  outline: 3px solid blue;
+  width: 1040px;
+  height: 115px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #f0c52e;
+  /* visibility: hidden; */
+}
+
+.slider-list {
+  outline: 3px solid blue;
+  width: 1040px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.slider {
+  outline: 4px solid yellow;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-photo {
+  outline: 5px solid orange;
+}
+
+.slider-desc {
+  outline: 5px solid orange;
+}
+
+.slider-desc-slogan {
+  outline: 6px solid pink;
+  width: 500px;
+}
+
+.slider-desc-text {
+  outline: 6px solid pink;
+  width: 500px;
+}
+
+.slider-desc-more {
+  outline: 6px solid pink;
+  width: 500px;
+}
+
+.slider-desc-features {
+  outline: 6px solid pink;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.slider-desc-meta-item {
+  outline: 7px solid gray;
+}
+
+.slider-desc-meta-item:nth-child(1) {
+  width: 160px;
+}
+
+.slider-desc-meta-item:nth-child(2) {
+  width: 140px;
+}
+
+.slider-desc-meta-item:nth-child(3) {
+  width: 160px;
+}
+
+main {
+  outline: 2px solid green;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categories {
+  outline: 3px solid blue;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-item {
+  outline: 4px solid yellow;
+}
+
+.categories-item-picture {
+  width: 160px;
+  height: 160px;
+  background: #f0c52e;
+  display: flex;
+}
+
+.categories-item-picture img {
+  margin: auto;
+}
+
+.meta-slider {
+  outline: 3px solid blue;
+  height: 290px;
+  margin-left: -140px;
+  margin-right: -140px;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.meta-slider-nav {
+  outline: 4px solid yellow;
+  width: 300px;
+  padding: 140px;
+}
+
+.meta-slide {
+  outline: 4px solid red;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+.meta-slide:nth-child(2) {
+  display: none;
+}
+
+.meta-slide:nth-child(3) {
+  display: none;
+}
+
+.slider-title {
+  width: 500px;
+}
+
+.slider-text {
+  width: 500px;
+}
+
+.company {
+  outline: 3px solid blue;
+  width: 1160px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-us-and-contacts {
+  outline: 3px solid blue;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  outline: 4px solid yellow;
+}
+
+.contacts {
+  outline: 4px solid yellow;
+}
+
+footer {
+  outline: 3px solid green;
+  height: 325px;
+  background-color: yellow;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
 }
