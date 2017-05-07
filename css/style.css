@@ -1,22 +1,64 @@
+html {
+  background-color: gray;
+}
+
 body {
   outline: 1px solid red;
+  background-color: white;
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: -30px;
   margin-bottom: 0;
+  padding: 0;
 
   font-size: 15px;
   line-height: 30px;
   color: #464646;
   font-weight: 300;
-  font-family: "OpenSans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('fonts/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('fonts/gilroylight-webfont.woff2') format('woff2'),
+         url('fonts/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .main-title {
   font-size: 48px;
   color: #000000;
-  font-weight: 800;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 .subtitle {
@@ -34,7 +76,7 @@ body {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .main-navigation {
@@ -48,6 +90,7 @@ body {
 
 .main-title {
   outline: 4px solid yellow;
+  width: 164px;
 }
 
 .nav-top {
