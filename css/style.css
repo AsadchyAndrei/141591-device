@@ -431,7 +431,7 @@ body {
 }
 
 .slider-list .slider:nth-child(1) {
-  
+
 }
 
 .slider-list .slider:nth-child(2) {
@@ -1200,11 +1200,43 @@ footer .btn {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .card-img {
   width: 360px;
   height: 380px;
+}
+
+.new::before {
+  content: "";
+  width: 58px;
+  height: 58px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 29px;
+  right: 27px;
+}
+
+.new::after {
+  content: "new";
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: auto;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 45px;
+  right: 38px;
+}
+
+.card-img {
+  width: 360px;
+  height: 380px;
+  position: relative;
 }
 
 .card-description {
@@ -1287,18 +1319,15 @@ footer .btn {
   padding-left: 0;
   margin-left: 50px;
   position: relative;
-}
-
-.footer-top-right .link:link {
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-top-right .link:hover {
-  opacity: 1;
+  color: rgba(255, 255, 255, 1);
 }
 
 .footer-top-right .link:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-top-right .enter::before {
@@ -1313,6 +1342,14 @@ footer .btn {
   background-position: -117px -53px;
 }
 
+.footer-top-right .enter:hover::before {
+  opacity: 0.6;
+}
+
+.footer-top-right .enter:active::before {
+  opacity: 0.3;
+}
+
 .footer-top-right .comparison::before {
   content: "";
   position: absolute;
@@ -1325,6 +1362,14 @@ footer .btn {
   background-position: -69px -5px;
 }
 
+.footer-top-right .comparison:hover::before {
+  opacity: 0.6;
+}
+
+.footer-top-right .comparison:active::before {
+  opacity: 0.3;
+}
+
 .footer-top-right .basket::before {
   content: "";
   position: absolute;
@@ -1335,6 +1380,14 @@ footer .btn {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -27px -5px;
+}
+
+.footer-top-right .basket:hover::before {
+  opacity: 0.6;
+}
+
+.footer-top-right .basket:active::before {
+  opacity: 0.3;
 }
 
 .socials a {
