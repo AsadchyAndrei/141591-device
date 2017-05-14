@@ -698,6 +698,7 @@ body {
 }
 
 .meta-slider-nav ul li {
+  position: relative;
   margin: 25px 0;
   padding: 0;
   width: 240px;
@@ -725,6 +726,16 @@ body {
   background-color: #000000;
   background-image: none;
   color: #f7e184;
+}
+
+.meta-slider-nav .line:active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 160px;
+  width: 120px;
+  height: 40px;
+  background-color: #000000;
 }
 
 .meta-slide {
@@ -1572,6 +1583,7 @@ footer .btn {
 }
 
 .modal-content-close {
+  outline: none;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1611,6 +1623,20 @@ footer .btn {
 .modal-content-close:active::before,
 .modal-content-close:active::after {
   opacity: 0.3;
+}
+
+.modal-content-map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  height: 559px;
+  background-image: url("../img/map-big.jpg");
+  background-repeat: no-repeat;
+  margin-top: -280px;
+  margin-left: -480px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .modal-form textarea[name="text"],
