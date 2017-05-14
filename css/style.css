@@ -1203,9 +1203,46 @@ footer .btn {
   position: relative;
 }
 
-.card-img {
-  width: 360px;
-  height: 380px;
+.card-actions {
+  display: none;
+}
+
+.card-actions .btn {
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 4px;
+}
+
+.card-actions .btn:hover {
+  background-color: #f0c52e;
+}
+
+.card-actions .btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.card-actions .bookmark {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.card-actions .bookmark:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.card-actions .bookmark:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .new::before {
@@ -1237,6 +1274,17 @@ footer .btn {
   width: 360px;
   height: 380px;
   position: relative;
+  cursor: pointer;
+}
+
+.card-img:hover + .card-actions {
+  outline: 1px solid red;
+  display: block;
+  position: absolute;
+  top: 173px;
+  left: 80px;
+  width: 200px;
+  height: 81px;
 }
 
 .card-description {
