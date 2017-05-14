@@ -1278,7 +1278,6 @@ footer .btn {
 }
 
 .card-img:hover + .card-actions {
-  outline: 1px solid red;
   display: block;
   position: absolute;
   top: 173px;
