@@ -698,6 +698,7 @@ body {
 }
 
 .meta-slider-nav ul li {
+  position: relative;
   margin: 25px 0;
   padding: 0;
   width: 240px;
@@ -725,6 +726,16 @@ body {
   background-color: #000000;
   background-image: none;
   color: #f7e184;
+}
+
+.meta-slider-nav .line:active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 160px;
+  width: 120px;
+  height: 40px;
+  background-color: #000000;
 }
 
 .meta-slide {
