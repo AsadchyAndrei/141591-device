@@ -1679,3 +1679,85 @@ footer .btn {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!! ФИЛЬТР !!!!!!!!!!!!!!!!!!!! */
+
+.range-filter {
+  width: 200px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 25px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 19px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background: #efefef;
+}
+
+.range-controls .toggle:active {
+  border: 3px solid #ffffff;
+  background: #7eae29;
+  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.range-controls .toggle-min {
+  left: -5px;
+}
+
+.range-controls .toggle-max {
+  left: 105px;
+}
+
+.toggle-min::before {
+  content: "от 0";
+  width: 70px;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.toggle-max::before {
+  content: "до 5000";
+  width: 70px;
+  position: absolute;
+  top: 15px;
+  left: -27px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
