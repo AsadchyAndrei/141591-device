@@ -14,10 +14,12 @@
         </h1>
         <div class="nav-top">
           <form class="nav-top-search-form" method="post" action="search.php">
-            <input type="search" name="search" id="form-search" placeholder="Поиск по сайту">
-            <div class="input-line"></div>
-            <div class="input-search">Найти</div>
             <label class="img-search" for="form-search"></label>
+            <input type="search" name="search" id="form-search" placeholder="Поиск по сайту">
+            <label class="submit-header">
+              <input type="submit" name="submit-header" value="Найти">
+              <span class="submit-index-indicator">Найти</span>
+            </label>
           </form>
           <div class="nav-top-user">
             <div class="nav-top-user-left">
@@ -33,11 +35,10 @@
         <div class="nav-bottom">
           <div class="nav-bottom-catalog">
             <a class="btn" href="#">Каталог товаров</a>
-<!-- Всплывающее меню -->
             <div class="dropdown">
               <ul class="dropdown-left">
                 <li><a class="link" href="#">Виртуальная реальность</a></li>
-                <li><a class="link" href="catalog.html">Моноподы для селфи</a></li>
+                <li><a class="link">Моноподы для селфи</a></li>
                 <li><a class="link" href="#">Экшн-камеры</a></li>
               </ul>
               <ul class="dropdown-center">
@@ -48,7 +49,6 @@
                 <li><a class="link" href="#">Квадрокоптеры</a></li>
               </ul>
             </div>
-<!-- Всплывающее меню -->
           </div>
           <div class="nav-bottom-aside">
             <div class="nav-bottom-aside-left">
@@ -63,19 +63,22 @@
       </nav>
     </header>
 
-    <main class="catalog-main">
-      <h2 class="subject">Моноподы для селфи</h2>
-      <ul class="breadcrumbs">
-        <li>
-          <a class="active" href="index.html">Главная</a>
-        </li>
-        <li>
-          <a class="active" href="#">Каталог товаров</a>
-        </li>
-        <li>
-          <a>Моноподы для селфи</a>
-        </li>
-      </ul>
+    <main>
+      <div class="breadcrumbs-container">
+        <h2 class="subject">Моноподы для селфи</h2>
+        <ul class="breadcrumbs">
+          <li>
+            <a class="active" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="active" href="#">Каталог товаров</a>
+          </li>
+          <li>
+            <a>Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="catalog">
         <div class="sidebar">
           <div class="sidebar-header">
@@ -173,7 +176,7 @@
                   <a class="bookmark" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="card-description">
-                  <div class="card-name">Любительская селфи-палка</div>
+                  <a href="#"><div class="card-name">Любительская селфи-палка</div></a>
                   <div class="card-price">500 руб.</div>
                 </div>
               </article>
@@ -186,7 +189,7 @@
                   <a class="bookmark" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="card-description">
-                  <div class="card-name">Профессиональная<br> селфи-палка</div>
+                  <a href="#"><div class="card-name">Профессиональная селфи-палка</div></a>
                   <div class="card-price">1 500 руб.</div>
                 </div>
               </article>
@@ -199,7 +202,7 @@
                   <a class="bookmark" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="card-description">
-                  <div class="card-name">Непотопляемая селфи-палка</div>
+                  <a href="#"><div class="card-name">Непотопляемая селфи-палка</div></a>
                   <div class="card-price">2 500 руб.</div>
                 </div>
               </article>
@@ -212,7 +215,7 @@
                   <a class="bookmark" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="card-description">
-                  <div class="card-name">Селфи-палка &laquo;Следуй за мной&raquo;</div>
+                  <a href="#"><div class="card-name">Селфи-палка &laquo;Следуй за мной&raquo;</div></a>
                   <div class="card-price">4 900 руб.</div>
                 </div>
               </article>
@@ -236,44 +239,46 @@
     </main>
 
     <footer>
-      <div class="footer-top">
-        <a class="logo-title" href="index.html">Device</a>
-        <div class="footer-top-right">
-          <a class="link enter" href="#">Войти</a>
-          <a class="link comparison" href="#">Сравнить</a>
-          <a class="link basket" href="#">Корзина</a>
+      <div class="footer-center">
+        <div class="footer-top">
+          <a class="logo-title" href="index.html">Device</a>
+          <div class="footer-top-right">
+            <a class="link enter" href="#">Войти</a>
+            <a class="link comparison" href="#">Сравнить</a>
+            <a class="link basket" href="#">Корзина</a>
+          </div>
         </div>
-      </div>
-      <div class="footer-middle">
-        <div class="address">
+        <div class="footer-middle">
+          <div class="address">
           г. Москва, ул. Строителей, 15
-        </div>
-        <div class="footer-navigation">
-          <a class="btn" href="#">Доставка</a>
-          <a class="btn" href="#">Гарантия</a>
-          <a class="btn" href="#">Контакты</a>
-        </div>
-        <div class="phone">
+          </div>
+          <div class="footer-navigation">
+            <a class="btn" href="#">Доставка</a>
+            <a class="btn" href="#">Гарантия</a>
+            <a class="btn" href="#">Контакты</a>
+          </div>
+          <div class="phone">
           Тел. +7 (495) 495-95-95
+          </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="border"></div>
-        <div class="socials">
-          <a href="#">
-            <img src="img/facebook.png" alt="facebook" width="39" height="38">
-          </a>
-          <a href="#">
-            <img src="img/insta.png" alt="instagram" width="39" height="38">
-          </a>
-          <a href="#">
-            <img src="img/twitter.png" alt="twitter" width="38" height="38">
-          </a>
-        </div>
-        <div class="icon">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/htmlacademy.png" alt="htmlacademy.ru" width="27" height="34">
-          </a>
+        <div class="footer-bottom">
+          <div class="border"></div>
+          <div class="socials">
+            <a href="#">
+              <img src="img/facebook.png" alt="facebook" width="39" height="38">
+            </a>
+            <a href="#">
+              <img src="img/insta.png" alt="instagram" width="39" height="38">
+            </a>
+            <a href="#">
+              <img src="img/twitter.png" alt="twitter" width="38" height="38">
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/htmlacademy.png" alt="htmlacademy.ru" width="27" height="34">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

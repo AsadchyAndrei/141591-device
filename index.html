@@ -11,12 +11,16 @@
       <nav class="main-navigation">
         <h1 class="main-title">Device</h1>
         <div class="nav-top">
+
           <form class="nav-top-search-form" method="post" action="search.php">
-            <input type="search" name="search" id="form-search" placeholder="Поиск по сайту">
-            <div class="input-line"></div>
-            <div class="input-search">Найти</div>
             <label class="img-search" for="form-search"></label>
+            <input type="search" name="search" id="form-search" placeholder="Поиск по сайту">
+            <label class="submit-header">
+              <input type="submit" name="submit-header" value="Найти">
+              <span class="submit-index-indicator">Найти</span>
+            </label>
           </form>
+
           <div class="nav-top-user">
             <div class="nav-top-user-left">
               <a class="link enter" href="#">Войти</a>
@@ -30,7 +34,6 @@
         <div class="nav-bottom">
           <div class="nav-bottom-catalog">
             <a class="btn" href="#">Каталог товаров</a>
-<!-- Всплывающее меню -->
             <div class="dropdown">
               <ul class="dropdown-left">
                 <li><a class="link" href="#">Виртуальная реальность</a></li>
@@ -45,7 +48,6 @@
                 <li><a class="link" href="#">Квадрокоптеры</a></li>
               </ul>
             </div>
-<!-- Всплывающее меню -->
           </div>
           <div class="nav-bottom-aside">
             <div class="nav-bottom-aside-left">
@@ -73,7 +75,7 @@
             </div>
             <div class="slider-desc">
               <div class="slider-desc-slogan">Делай селфи,<br>как Бен Стиллер!</div>
-              <p class="slider-desc-text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p class="slider-desc-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <div class="slider-desc-more">
                 <a class="btn line" href="#">Подробнее</a>
               </div>
@@ -108,7 +110,7 @@
             </div>
             <div class="slider-desc">
               <div class="slider-desc-slogan">Худеем<br>правильно!</div>
-              <p class="slider-desc-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+              <p class="slider-desc-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <div class="slider-desc-more">
                 <a class="btn line" href="#">Подробнее</a>
               </div>
@@ -134,8 +136,8 @@
               <img src="img/slider-3.png" width="526" height="334" alt="Порхает как бабочка, жалит как пчела!">
             </div>
             <div class="slider-desc">
-              <div class="slider-desc-slogan">Порхает как бабочка,<br>жалит как пчела!</div>
-              <p class="slider-desc-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+              <div class="slider-desc-slogan">Порхает как бабочка, жалит как пчела!</div>
+              <p class="slider-desc-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <div class="slider-desc-more">
                 <a class="btn line" href="#">Подробнее</a>
               </div>
@@ -174,7 +176,7 @@
             <div class="categories-item-picture">
               <img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность">
             </div>
-            <h2 class="subtitle">Виртуальная<br>реальность</h2>
+            <h2 class="subtitle">Виртуальная реальность</h2>
           </div>
         </a>
         <a href="catalog.html">
@@ -182,7 +184,7 @@
             <div class="categories-item-picture">
               <img src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи">
             </div>
-            <h2 class="subtitle">Моноподы<br>для селфи</h2>
+            <h2 class="subtitle">Моноподы для селфи</h2>
           </div>
         </a>
         <a href="#">
@@ -220,46 +222,48 @@
       </div>
 
       <div class="slider-container">
-        <div class="meta-slider">
-          <div class="meta-slider-nav">
-            <ul>
-              <li>
-                <a class="btn line" href="#">Доставка</a>
-              </li>
-              <li>
-                <a class="btn line" href="#">Гарантия</a>
-              </li>
-              <li>
-                <a class="btn line" href="#">Кредит</a>
-              </li>
-            </ul>
-          </div>
-          <div class="meta-slider-content">
-            <div class="meta-slide">
-              <div class="slide-description">
-                <div class="slider-title">Доставка</div>
-                <p class="slider-text">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж.</p>
-              </div>
-              <div class="slide-img">
-                <img class="meta-desc-img" src="img/delivery.png" width="136" height="164" alt="Доставка">
-              </div>
+        <div class="slider-container-center">
+          <div class="meta-slider">
+            <div class="meta-slider-nav">
+              <ul>
+                <li>
+                  <a class="active">Доставка</a>
+                </li>
+                <li>
+                  <a class="btn line" href="#">Гарантия</a>
+                </li>
+                <li>
+                  <a class="btn line" href="#">Кредит</a>
+                </li>
+              </ul>
             </div>
-            <div class="meta-slide">
-              <div class="slide-description">
-                <div class="slider-title">Гарантия</div>
-                <p class="slider-text">Если из-за возгарания купленного у нас товара у вас сгорит дом —<br>не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            <div class="meta-slider-content">
+              <div class="meta-slide">
+                <div class="slide-description">
+                  <div class="slider-title">Доставка</div>
+                  <p class="slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </div>
+                <div class="slide-img">
+                  <img class="meta-desc-img" src="img/delivery.png" width="136" height="164" alt="Доставка">
+                </div>
               </div>
-              <div class="slide-img">
-                <img class="meta-desc-img" src="img/warranty.png" width="171" height="195" alt="Гарантия">
+              <div class="meta-slide">
+                <div class="slide-description">
+                  <div class="slider-title">Гарантия</div>
+                  <p class="slider-text">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+                </div>
+                <div class="slide-img">
+                  <img class="meta-desc-img" src="img/warranty.png" width="171" height="195" alt="Гарантия">
+                </div>
               </div>
-            </div>
-            <div class="meta-slide">
-              <div class="slide-description">
-                <div class="slider-title">Кредит</div>
-                <p class="slider-text">Залезть в долговую яму стало проще! Кредитные консультанты<br>подберут для вас наиболее выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</p>
-              </div>
-              <div class="slide-img">
-                <img class="meta-desc-img" src="img/credit.png" width="156" height="188" alt="Кредит">
+              <div class="meta-slide">
+                <div class="slide-description">
+                  <div class="slider-title">Кредит</div>
+                  <p class="slider-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </div>
+                <div class="slide-img">
+                  <img class="meta-desc-img" src="img/credit.png" width="156" height="188" alt="Кредит">
+                </div>
               </div>
             </div>
           </div>
@@ -299,44 +303,46 @@
     </main>
 
     <footer>
-      <div class="footer-top">
-        <a class="logo-title" href="index.html">Device</a>
-        <div class="footer-top-right">
-          <a class="link enter" href="#">Войти</a>
-          <a class="link comparison" href="#">Сравнить</a>
-          <a class="link basket" href="#">Корзина</a>
+      <div class="footer-center">
+        <div class="footer-top">
+          <a class="logo-title" href="index.html">Device</a>
+          <div class="footer-top-right">
+            <a class="link enter" href="#">Войти</a>
+            <a class="link comparison" href="#">Сравнить</a>
+            <a class="link basket" href="#">Корзина</a>
+          </div>
         </div>
-      </div>
-      <div class="footer-middle">
-        <div class="address">
+        <div class="footer-middle">
+          <div class="address">
           г. Москва, ул. Строителей, 15
-        </div>
-        <div class="footer-navigation">
-          <a class="btn" href="#">Доставка</a>
-          <a class="btn" href="#">Гарантия</a>
-          <a class="btn" href="#">Контакты</a>
-        </div>
-        <div class="phone">
+          </div>
+          <div class="footer-navigation">
+            <a class="btn" href="#">Доставка</a>
+            <a class="btn" href="#">Гарантия</a>
+            <a class="btn" href="#">Контакты</a>
+          </div>
+          <div class="phone">
           Тел. +7 (495) 495-95-95
+          </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="border"></div>
-        <div class="socials">
-          <a href="#">
-            <img src="img/facebook.png" alt="facebook" width="39" height="38">
-          </a>
-          <a href="#">
-            <img src="img/insta.png" alt="instagram" width="39" height="38">
-          </a>
-          <a href="#">
-            <img src="img/twitter.png" alt="twitter" width="38" height="38">
-          </a>
-        </div>
-        <div class="icon">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/htmlacademy.png" alt="htmlacademy.ru" width="27" height="34">
-          </a>
+        <div class="footer-bottom">
+          <div class="border"></div>
+          <div class="socials">
+            <a href="#">
+              <img src="img/facebook.png" alt="facebook" width="39" height="38">
+            </a>
+            <a href="#">
+              <img src="img/insta.png" alt="instagram" width="39" height="38">
+            </a>
+            <a href="#">
+              <img src="img/twitter.png" alt="twitter" width="38" height="38">
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/htmlacademy.png" alt="htmlacademy.ru" width="27" height="34">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
@@ -346,17 +352,16 @@
       <form class="modal-form" action="php.php" method="post">
         <div class="form-top">
           <div class="form-top-name">
-            <label for="name">Ваше имя:</label><br>
+            <label for="name">Ваше имя:</label>
             <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="form-top-mail">
-            <label for="mail">Ваш e-mail:</label><br>
+            <label for="mail">Ваш e-mail:</label>
             <input type="text" name="mail" id="mail" placeholder="Для отправки ответа">
           </div>
         </div>
         <div class="form-text">
           <span>Текст письма:</span>
-          <br>
           <textarea name="text">В свободной форме</textarea>
         </div>
         <label class="submit">
