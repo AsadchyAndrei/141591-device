@@ -440,7 +440,7 @@ body {
 
 .nav-bottom-catalog .btn {
   display: inline-block;
-  padding-right: 30px;
+  padding-right: 25px;
 }
 
 .nav-bottom-catalog:hover .dropdown {
@@ -556,10 +556,6 @@ body {
   top: -113px;
 }
 
-.slider-photo {
-
-}
-
 .slider-list .slider:nth-child(1) .slider-photo {
   margin-right: 106px;
   margin-left: auto;
@@ -596,7 +592,7 @@ body {
 }
 
 .slider-desc-text {
-  width: 500px;
+  width: 480px;
   margin-bottom: 40px;
   color: #464646;
 }
@@ -624,7 +620,7 @@ body {
 
 .slider-desc-features {
   width: 500px;
-  margin-top: auto;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -736,6 +732,10 @@ main {
   margin-bottom: 0;
 }
 
+.categories a:nth-child(2) .categories-item .subtitle {
+  width: 120px;
+}
+
 .categories-item:hover .categories-item-picture {
   background: #f0c52e;
 }
@@ -779,7 +779,7 @@ main {
 
 .meta-slider-content {
   display: flex;
-  padding-left: 77px;
+  padding-left: 83px;
 }
 
 .meta-slider-nav ul {
@@ -888,7 +888,7 @@ main {
 
 .slide-img {
   margin-top: 25px;
-  margin-right: 20px;
+  margin-right: 27px;
 }
 
 .slider-title {
@@ -896,7 +896,7 @@ main {
 }
 
 .slider-text {
-  width: 500px;
+  width: 455px;
 }
 
 .meta-desc-img {
@@ -1020,10 +1020,15 @@ main {
   margin-right: 100px;
 }
 
+.about-us p {
+  width: 475px;
+}
+
 .about-us ul {
   margin-top: auto;
   margin-bottom: -2px;
   list-style-type: none;
+  padding-left: 35px;
 }
 
 .about-us li {
@@ -1043,7 +1048,7 @@ main {
   border-radius: 50%;
   position: absolute;
   top: 10px;
-  left: -41px;
+  left: -35px;
 }
 
 .contacts {
@@ -1074,7 +1079,7 @@ footer .btn {
 }
 
 .footer-top {
-  margin-top: 67px;
+  margin-top: 56px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -1084,6 +1089,19 @@ footer .btn {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
+}
+
+.footer-middle .address,
+.footer-middle .phone {
+
+}
+
+.footer-navigation {
+  margin-right: 41px;
+}
+
+.footer-navigation .btn {
+  font-size: 17px;
 }
 
 .footer-navigation .btn:nth-child(2) {
@@ -1118,13 +1136,13 @@ footer .btn {
   line-height: 1.2;
   color: #000000;
   font-weight: 900;
-  margin: 35px 0 25px;
+  margin: 35px 0 12px;
 }
 
 .breadcrumbs {
   display: flex;
   padding-left: 60px;
-  margin: 0 0 50px;
+  margin: 0 0 40px;
 }
 
 .breadcrumbs li {
@@ -1241,7 +1259,11 @@ footer .btn {
 }
 
 .filter-title {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+}
+
+.bluetooth {
+  margin-top: -12px;
 }
 
 .filter-title span {
@@ -1302,7 +1324,11 @@ footer .btn {
   text-decoration: none;
   opacity: 0.3;
   font-weight: 400;
-  margin-right: 30px;
+  margin-right: 26px;
+}
+
+.body-header-item:nth-child(3) {
+  margin-left: 3px;
 }
 
 .body-header-item:not(.active):hover {
@@ -1366,6 +1392,7 @@ footer .btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -7px;
 }
 
 .body-footer-nav {
@@ -1400,6 +1427,7 @@ footer .btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 14px;
 }
 
 .body-footer-numbers a {
@@ -1412,7 +1440,7 @@ footer .btn {
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 14px;
 }
 
 .body-footer-numbers .number:hover {
@@ -1429,7 +1457,7 @@ footer .btn {
 
 .card {
   width: 360px;
-  min-height: 495px;
+  min-height: 504px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1542,6 +1570,7 @@ footer .btn {
 .card-description a {
   text-decoration: none;
   color: #000000;
+  max-width: 270px;
 }
 
 .card-name {
@@ -1550,7 +1579,7 @@ footer .btn {
   font-size: 18px;
   font-weight: 900;
   line-height: 1.2;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 
 .card-price {
@@ -1692,7 +1721,8 @@ footer .btn {
 }
 
 .socials {
-  margin-right: 30px;
+  margin-right: 70px;
+  margin-top: 5px;
 }
 
 .socials a {
@@ -1724,8 +1754,8 @@ footer .btn {
 
 .checkbox-color {
   position: relative;
-  padding-left: 40px;
-  margin-bottom: 10px;
+  padding-left: 39px;
+  margin-bottom: 19px;
   cursor: pointer;
   width: 60px;
   height: 23px;
@@ -1737,8 +1767,8 @@ footer .btn {
 
 .checkbox-color input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  top: 5px;
-  left: 0;
+  top: 3px;
+  left: -1px;
   width: 23px;
   height: 23px;
   background-color: #e3e3e3;
@@ -1758,8 +1788,8 @@ footer .btn {
 
 .checkbox-bluetooth {
   position: relative;
-  padding-left: 40px;
-  margin-bottom: 10px;
+  padding-left: 38px;
+  margin-bottom: 17px;
   cursor: pointer;
   width: 30px;
   height: 29px;
@@ -1961,10 +1991,10 @@ footer .btn {
 .range-controls {
   position: relative;
   height: 41px;
-  padding-top: 25px;
+  padding-top: 17px;
   padding-right: 0;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: -7px;
   border-radius: 5px;
 }
 
@@ -1981,8 +2011,7 @@ footer .btn {
 
 .range-controls .toggle {
   position: absolute;
-  top: 19px;
-  left: 0px;
+  top: 11px;
   width: 10px;
   height: 10px;
   cursor: pointer;
@@ -1998,19 +2027,19 @@ footer .btn {
 }
 
 .range-controls .toggle-min {
-  left: -5px;
+  left: -2px;
 }
 
 .range-controls .toggle-max {
-  left: 105px;
+  left: 110px;
 }
 
 .toggle-min::before {
   content: "от 0";
   width: 70px;
   position: absolute;
-  top: 15px;
-  left: -5px;
+  top: 16px;
+  left: 0px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -2023,8 +2052,8 @@ footer .btn {
   content: "до 5000";
   width: 70px;
   position: absolute;
-  top: 15px;
-  left: -27px;
+  top: 16px;
+  left: -22px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
