@@ -264,23 +264,17 @@ body {
 }
 
 .submit-header {
-  cursor: pointer;
-  width: 85px;
-  height: 46px;
-}
-
-.submit-header input[type="submit"] {
   display: none;
 }
 
-.submit-header .submit-index-indicator {
+.nav-top-search-form input[type="submit"] {
   display: none;
 }
 
-.nav-top-search-form input[type="search"]:focus + .submit-header .submit-index-indicator {
+.nav-top-search-form input[type="search"]:focus + .submit-header {
   display: block;
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 100px;
   width: 81px;
   height: 42px;
@@ -292,24 +286,25 @@ body {
   border: 2px solid #000000;
   border-bottom: none;
   padding-top: 3px;
+  cursor: pointer;
 }
 
 .nav-top-search-form input[type="search"]:focus + .submit-header::before {
   content: "";
   position: absolute;
-  top: 47px;
-  left: 0px;
+  top: 43px;
+  right: 0;
   width: 420px;
   height: 2px;
   background-color: #000000;
 }
 
-.submit-header .submit-index-indicator:hover {
+.submit-header:hover {
   color: #ffffff;
   background-color: #000000;
 }
 
-.submit-header .submit-index-indicator:active {
+.submit-header:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
 }
@@ -466,7 +461,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 27px;
+  margin-top: 33px;
 }
 
 .nav-bottom .btn:hover {
@@ -816,11 +811,11 @@ main {
   margin: auto;
 }
 
-.categories a:nth-child(2) .categories-item .categories-item-picture img {
+.categories a:nth-child(2) img {
   margin-bottom: 0;
 }
 
-.categories a:nth-child(2) .categories-item .subtitle {
+.categories a:nth-child(2) .subtitle {
   width: 120px;
 }
 
@@ -1268,7 +1263,8 @@ footer .btn {
           align-items: center;
 }
 
-.footer-bottom .border {
+.footer-bottom::before {
+  content: "";
   width: 80px;
   height: 7px;
   background-color: #ffc600;
@@ -1423,27 +1419,53 @@ footer .btn {
           flex-direction: column;
 }
 
-.filter-title {
-  margin-bottom: 13px;
+.form-price {
+  margin-top: 34px;
+  margin-bottom: 0;
 }
 
-.bluetooth {
-  margin-top: -12px;
+.form-color {
+  margin-top: 35px;
+  margin-bottom: 0;
 }
 
-.filter-title span {
+.form-bluetooth {
+  margin-top: 26px;
+  margin-bottom: 27px;
+}
+
+.form-price b,
+.form-color b,
+.form-bluetooth b {
+  display: inline-block;
+  vertical-align: top;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.sidebar-body hr {
-  height: 2px;
-  color: #000000;
-  background-color: #000000;
-  border: none;
-  margin-top: 35px;
+.form-price b {
+  padding-top: 13px;
+  padding-bottom: 18px;
+}
+
+.form-color b {
+  padding-top: 13px;
+  padding-bottom: 23px;
+}
+
+.form-bluetooth b {
+  padding-top: 13px;
+  padding-bottom: 23px;
+}
+
+.form-price,
+.form-color,
+.form-bluetooth {
+  border-top: 2px solid #000000;
 }
 
 .body {
@@ -1940,18 +1962,44 @@ footer .btn {
 .socials a {
   margin-left: 15px;
   font-size: 0;
-}
-
-.socials img {
   opacity: 0.3;
+
+  display: inline-block;
+  vertical-align: baseline;
+  width: 39px;
+  height: 38px;
 }
 
-.socials img:hover {
+.socials a:hover {
   opacity: 0.6;
 }
 
-.socials img:active {
+.socials a:active {
   opacity: 0.1;
+}
+
+.socials a:nth-child(1) {
+  background-image: url("../img/facebook.png");
+  background-repeat: no-repeat;
+}
+
+.socials a:nth-child(2) {
+  background-image: url("../img/insta.png");
+  background-repeat: no-repeat;
+}
+
+.socials a:nth-child(3) {
+  background-image: url("../img/twitter.png");
+  background-repeat: no-repeat;
+}
+
+.icon a {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 27px;
+  height: 34px;
+  background-image: url("../img/htmlacademy.png");
+  background-repeat: no-repeat;
 }
 
 .icon img:hover {
@@ -1964,32 +2012,35 @@ footer .btn {
 
 /* ================ FORMS ================= */
 
-.checkbox-color {
-  position: relative;
-  padding-left: 39px;
-  margin-bottom: 19px;
-  cursor: pointer;
-  width: 60px;
-  height: 23px;
+.form-color {
+  padding-bottom: 0;
 }
 
-.checkbox-color input[type="checkbox"] {
+.form-color input[type="checkbox"] {
   display: none;
 }
 
-.checkbox-color input[type="checkbox"] + .checkbox-indicator {
-  position: absolute;
-  top: 3px;
-  left: -1px;
-  width: 23px;
-  height: 23px;
-  background-color: #e3e3e3;
+.form-color label {
+  display: block;
+  padding-left: 38px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
-.checkbox-color input[type="checkbox"]:checked + .checkbox-indicator::before {
+.form-color label::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  background-color: #dbdbdb;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.form-color input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 12px;
   left: 6px;
   width: 12px;
   height: 7px;
@@ -1998,20 +2049,19 @@ footer .btn {
   background-position: -98px -31px;
 }
 
-.checkbox-bluetooth {
+.form-bluetooth label {
+  display: block;
+  padding-left: 40px;
   position: relative;
-  padding-left: 38px;
-  margin-bottom: 17px;
-  cursor: pointer;
-  width: 30px;
-  height: 29px;
+  margin-bottom: 10px;
 }
 
-.checkbox-bluetooth input[type="radio"] {
+.form-bluetooth input[type="radio"] {
   display: none;
 }
 
-.checkbox-bluetooth input[type="radio"] + .checkbox-indicator {
+.form-bluetooth label::before {
+  content: "";
   position: absolute;
   top: 3px;
   left: 0;
@@ -2021,41 +2071,31 @@ footer .btn {
   border-radius: 50%;
 }
 
-.checkbox-bluetooth input[type="radio"]:checked + .checkbox-indicator::before {
+.form-bluetooth input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 7px;
   width: 5px;
   height: 5px;
   border: 2px solid #000000;
   border-radius: 50%;
 }
 
-.submit {
+.sidebar-body-form .submit {
   cursor: pointer;
   width: 200px;
   height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
-.submit input[type="submit"] {
-  display: none;
-}
-
-.submit input[type="submit"] + .submit-indicator {
-  display: inline-block;
-  vertical-align: baseline;
-  width: 100%;
-  text-align: center;
-  padding: 5px 0;
-  margin-top: 20px;
-}
-
-.submit input[type="submit"] + .submit-indicator:hover {
+.sidebar-body-form .submit:hover {
   background-color: #f0c52e;
 }
 
-.submit input[type="submit"] + .submit-indicator:active {
+.sidebar-body-form .submit:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2217,13 +2257,9 @@ footer .btn {
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!! ФИЛЬТР !!!!!!!!!!!!!!!!!!!! */
-
-.range-filter {
-  width: 200px;
-}
-
 .range-controls {
   position: relative;
+  width: 200px;
   height: 41px;
   padding-top: 17px;
   padding-right: 0;

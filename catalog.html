@@ -13,14 +13,14 @@
           <a href="index.html">Device</a>
         </h1>
         <div class="nav-top">
+
           <form class="nav-top-search-form" method="post" action="search.php">
             <label class="img-search" for="form-search"></label>
             <input type="search" name="search" id="form-search" placeholder="Поиск по сайту">
-            <label class="submit-header">
-              <input type="submit" name="submit-header" value="Найти">
-              <span class="submit-index-indicator">Найти</span>
-            </label>
+            <label class="submit-header" for="search-submit-header">Найти</label>
+            <input type="submit" name="search" placeholder="Найти" id="search-submit-header">
           </form>
+
           <div class="nav-top-user">
             <div class="nav-top-user-left">
               <a class="link enter" href="#">Валентин Петухов</a>
@@ -86,11 +86,9 @@
           </div>
           <div class="sidebar-body">
             <form class="sidebar-body-form" name="filter" method="post" action="catalog.php">
-              <div class="filter-title">
-                <hr>
-                <span>Стоимость</span>
-              </div>
-              <div class="range-filter">
+
+              <div class="form-price">
+                <b>Стоимость</b>
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar" style="margin-left: 0%; width: 56%"></div>
@@ -99,59 +97,37 @@
                   <div class="toggle toggle-max"></div>
                 </div>
               </div>
-              <div class="filter-title">
-                <hr>
-                <span>Цвет</span>
-              </div>
-              <label class="checkbox-color">
+
+              <div class="form-color">
+                <b>Цвет</b>
                 <input class="filter-checkbox" name="black" id="black" type="checkbox" checked>
-                <span class="checkbox-indicator">
-                </span>
-                Черный
-              </label>
-              <label class="checkbox-color">
+                <label class="checkbox-color" for="black">Черный</label>
+
                 <input class="filter-checkbox" name="white" id="white" type="checkbox">
-                <span class="checkbox-indicator">
-                </span>
-                Белый
-              </label>
-              <label class="checkbox-color">
+                <label class="checkbox-color" for="white">Белый</label>
+
                 <input class="filter-checkbox" name="blue" id="blue" type="checkbox" checked>
-                <span class="checkbox-indicator">
-                </span>
-                Синий
-              </label>
-              <label class="checkbox-color">
+                <label class="checkbox-color" for="blue">Синий</label>
+
                 <input class="filter-checkbox" name="red" id="red" type="checkbox" checked>
-                <span class="checkbox-indicator">
-                </span>
-                Красный
-              </label>
-              <label class="checkbox-color">
+                <label class="checkbox-color" for="red">Красный</label>
+
                 <input class="filter-checkbox" name="pink" id="pink" type="checkbox">
-                <span class="checkbox-indicator">
-                </span>
-                Розовый
-              </label>
-              <div class="filter-title bluetooth">
-                <hr>
-                <span>Bluetooth</span>
+                <label class="checkbox-color" for="pink">Розовый</label>
               </div>
-              <label class="checkbox-bluetooth">
-                <input class="filter-radio" name="bluetooth" id="bluetooth-yes" type="radio" checked>
-                <span class="checkbox-indicator">
-                </span>
-                Есть
-              </label>
-              <label class="checkbox-bluetooth">
-                <input class="filter-radio" name="bluetooth" id="bluetooth-no" type="radio">                  <span class="checkbox-indicator">
-                </span>
-                Нет
-              </label>
-              <label class="submit">
-                <input class="btn" type="submit" value="Показать">
-                <span class="submit-indicator btn line">Показать</span>
-              </label>
+
+
+              <div class="form-bluetooth">
+                <b>Bluetooth</b>
+                <input name="bluetooth" id="bluetooth-yes" type="radio" checked>
+                <label for="bluetooth-yes">Есть</label>
+
+                <input name="bluetooth" id="bluetooth-no" type="radio">
+                <label for="bluetooth-no">Нет</label>
+              </div>
+
+
+              <button class="submit btn line" type="submit">Показать</button>
             </form>
           </div>
         </div>
@@ -262,22 +238,13 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="border"></div>
           <div class="socials">
-            <a href="#">
-              <img src="img/facebook.png" alt="facebook" width="39" height="38">
-            </a>
-            <a href="#">
-              <img src="img/insta.png" alt="instagram" width="39" height="38">
-            </a>
-            <a href="#">
-              <img src="img/twitter.png" alt="twitter" width="38" height="38">
-            </a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
           </div>
           <div class="icon">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/htmlacademy.png" alt="htmlacademy.ru" width="27" height="34">
-            </a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
           </div>
         </div>
       </div>
