@@ -283,7 +283,7 @@
               <img src="img/map.png" width="560" height="222" alt="Карта">
             </a>
           </div>
-          <a class="btn line" href="#">Напишите нам</a>
+          <a class="btn line popup-link" href="#">Напишите нам</a>
         </div>
       </div>
     </main>
@@ -352,6 +352,18 @@
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <div></div>
     </div>
+
+
+  <script>
+    var link = document.querySelector(".popup-link");
+    var popup = document.querySelector(".modal-content");
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-content-show");
+
+    });
+  </script>
 
   </body>
 </html>

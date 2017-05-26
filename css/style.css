@@ -2100,7 +2100,7 @@ footer .btn {
 }
 
 .modal-content {
-  position: absolute;
+  position: fixed;
   width: 760px;
   height: 553px;
   padding: 100px 100px 0;
@@ -2111,6 +2111,10 @@ footer .btn {
   margin-left: -480px;
   box-shadow: 0 10px 30px 1px #000000;
   display: none;
+}
+
+.modal-content-show {
+  display: block;
 }
 
 .modal-content-close {
