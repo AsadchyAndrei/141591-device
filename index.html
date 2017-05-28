@@ -278,11 +278,9 @@
         <div class="contacts">
           <div class="slider-title">Контакты</div>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="map">
-            <a href="https://www.google.by/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+119311/@55.687034,37.527424,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618?hl=ru&authuser=0">
-              <img src="img/map.png" width="560" height="222" alt="Карта">
-            </a>
-          </div>
+          <a class="map">
+            <img src="img/map.png" width="560" height="222" alt="Карта">
+          </a>
           <a class="btn line popup-link" href="#">Напишите нам</a>
         </div>
       </div>
@@ -349,26 +347,40 @@
     </div>
 
     <div class="modal-content-map">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <button class="map-modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <div></div>
     </div>
 
 
-  <script>
-    var link = document.querySelector(".popup-link");
-    var popup = document.querySelector(".modal-content");
-    var close = document.querySelector(".modal-content-close");
+    <script>
+      var link = document.querySelector(".popup-link");
+      var popup = document.querySelector(".modal-content");
+      var mapOpen = document.querySelector(".map");
+      var mapPopup = document.querySelector(".modal-content-map");
+      var close = document.querySelector(".modal-content-close");
+      var mapClose = document.querySelector(".map-modal-content-close");
 
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-content-show");
-    });
 
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-content-show");
-    });
-  </script>
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-content-show");
+      });
+
+      mapOpen.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-content-show");
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-content-show");
+      });
+    </script>
 
   </body>
 </html>

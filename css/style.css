@@ -1123,6 +1123,7 @@ main {
 
 .contacts .map {
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .about-us {
@@ -2113,11 +2114,8 @@ footer .btn {
   display: none;
 }
 
-.modal-content-show {
-  display: block;
-}
-
-.modal-content-close {
+.modal-content-close,
+.map-modal-content-close {
   outline: none;
   position: absolute;
   top: 20px;
@@ -2133,7 +2131,9 @@ footer .btn {
 }
 
 .modal-content-close::before,
-.modal-content-close::after {
+.modal-content-close::after,
+.map-modal-content-close::before,
+.map-modal-content-close::after {
   content: "";
   position: absolute;
   right: 12px;
@@ -2142,21 +2142,26 @@ footer .btn {
   background-color: #ffffff;
 }
 
-.modal-content-close::before {
+.modal-content-close::before,
+.map-modal-content-close::before {
   transform: rotate(45deg);
 }
 
-.modal-content-close::after {
+.modal-content-close::after,
+.map-modal-content-close::after {
   transform: rotate(-45deg);
 }
 
-.modal-content-close:hover {
+.modal-content-close:hover,
+.map-modal-content-close:hover {
   background-color: #f0c52e;
   opacity: 1;
 }
 
 .modal-content-close:active::before,
-.modal-content-close:active::after {
+.modal-content-close:active::after,
+.map-modal-content-close:active::before,
+.map-modal-content-close:active::after {
   opacity: 0.3;
 }
 
@@ -2164,12 +2169,18 @@ footer .btn {
   display: none;
   position: fixed;
   top: 50%;
+  margin-top: -280px;
   left: 50%;
+  margin-left: -480px;
   width: 960px;
   height: 559px;
   background-image: url("../img/map-big.jpg");
   background-repeat: no-repeat;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content-show {
+  display: block;
 }
 
 .modal-form textarea[name="text"],
