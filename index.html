@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <h1 class="main-title">Device</h1>
+        <h1 class="main-title animated wobble">Device</h1>
         <div class="nav-top">
 
           <form class="nav-top-search-form" method="post" action="search.php">
@@ -351,36 +352,7 @@
       <div></div>
     </div>
 
-
-    <script>
-      var link = document.querySelector(".popup-link");
-      var popup = document.querySelector(".modal-content");
-      var mapOpen = document.querySelector(".map");
-      var mapPopup = document.querySelector(".modal-content-map");
-      var close = document.querySelector(".modal-content-close");
-      var mapClose = document.querySelector(".map-modal-content-close");
-
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-content-show");
-      });
-
-      mapOpen.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.add("modal-content-show");
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-content-show");
-      });
-
-      mapClose.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.remove("modal-content-show");
-      });
-    </script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
